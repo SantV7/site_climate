@@ -1,0 +1,17 @@
+.string_alert {
+  width: 70%;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  padding: 10px 25px;
+  height: 30vh;
+  background-color: gray;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.205);
+}
+
+@media screen and (min-width: 768px) {
+  .string_alert {
+    max-width: 50%;
+  }
+}/*# sourceMappingURL=errorAlert.module.css.map */
