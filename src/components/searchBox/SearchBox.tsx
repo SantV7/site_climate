@@ -13,7 +13,7 @@ const SearchBox = () => {
     <section id="area_input">
       <div id="search_tools">
         <input type="text" placeholder="Tokyo"/>
-        {micOn ? <CiMicrophoneOn /> : <CiMicrophoneOff />}
+        <button onClick={() : void => setMicOn(!micOn)}>{micOn ? <CiMicrophoneOn /> : <CiMicrophoneOff />}</button>
 
 
       </div>
