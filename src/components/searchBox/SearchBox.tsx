@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { CiMicrophoneOn } from "react-icons/ci";
 import { CiMicrophoneOff } from "react-icons/ci";
-import styles from './searchBox.scss'
+import styles from './searchBox.module.scss'
 
 const SearchBox = () => {
 
@@ -11,14 +11,11 @@ const SearchBox = () => {
   return (
     <>
 
-    <section id="area_input">
+    <section className={styles.climate_area}>
       <div className={styles.search_tools}>
         <input type="text" placeholder="Tokyo"/>
-        <button onClick={() : void => setMicOn(!micOn)}>{micOn ? <CiMicrophoneOn /> : <CiMicrophoneOff />}</button>
-
-
+        <button className={styles.mic_btn} onClick={() : void => setMicOn(!micOn)}>{micOn ? <CiMicrophoneOn size={30} /> : <CiMicrophoneOff size={30} />}</button>
       </div>
-
     </section>
     
     </>

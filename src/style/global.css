@@ -9,8 +9,15 @@ html {
 }
 
 body {
+    background-image: linear-gradient(to bottom, black, rgb(61, 35, 61));
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+header {
+    h1 {
+        text-align: center;
+        color: white;
+        font-size: 2.8rem;
+        margin-top: 20px;
+    }
 }
