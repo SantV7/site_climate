@@ -1,18 +1,26 @@
 .string_alert {
-    width: 70%;
+    width: 110%;
     position: absolute;
-    top: 20%;
-    left: 25%;
-    padding: 10px 25px;
-    height: 30vh;
-    background-color: gray;
-    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0px 1px 1px rgba(97, 99, 122, 0.288);
+    height: 43vh;
+    background-color: rgb(229, 224, 245);
+    border-radius: 10px;
+    color: black;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.205);
-}
+    
+    h1 {
+        text-align: center;
+    }
 
 
-@media screen and (min-width: 768px) {
-    .string_alert {
-        max-width: 50%;
+    .close_area {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
     }
 }
+

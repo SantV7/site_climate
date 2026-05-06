@@ -11,6 +11,10 @@ const SearchBox = () => {
   const [searchCity, setSearchCity] = useState<string>('Tokyo')
   const [showError, setShowError] = useState<boolean>(false)
 
+  const changeShowError = () => {
+    setShowError(false)
+  }
+
   function handleSearchData() {
     if(searchCity !== "") {
        setShowError(true)
@@ -36,13 +40,12 @@ const SearchBox = () => {
         </div>
       </section>
 
-      <button onClick={handleSearchData}>Buscar</button>
+      <button className={styles.search_btn} onClick={handleSearchData}>Buscar</button>
 
-      {showError ? <ErrorValue /> : ''}
+      {showError ? <ErrorValue closeError={changeShowError} /> : ''}
 
 
     </section>
-    
     </>
   )
 }

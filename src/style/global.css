@@ -9,8 +9,8 @@ html {
 }
 
 body {
-    background-image: linear-gradient(to bottom, black, rgb(61, 35, 61));
-    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, black, rgb(61, 35, 61));height: 100vh;
     width: 100%;
     overflow-x: hidden;
 }
