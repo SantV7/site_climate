@@ -16,7 +16,7 @@ const ErrorValue = ({closeError} : ErrorValueProps) => {
     <div className={styles.string_alert}>
         <header className={styles.close_area}>
             <div></div>
-            <IoIosClose onClick={closeError} style={{cursor: 'pointer'}} size={55}/>
+            <IoIosClose className={styles.btn_close} onClick={closeError} style={{cursor: 'pointer'}} size={55}/>
         </header>
         <h1>É necessário escrever uma cidade</h1>
     

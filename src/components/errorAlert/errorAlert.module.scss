@@ -10,7 +10,7 @@
     border-radius: 10px;
     color: black;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.205);
-    
+
     h1 {
         text-align: center;
     }
@@ -20,6 +20,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        .btn_close {
+            background-color: orange;
+            border-bottom-left-radius: 6px;
+        }
 
     }
 }
