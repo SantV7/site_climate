@@ -15,13 +15,19 @@ const SearchBox = () => {
     setShowError(false)
   }
 
-  function handleSearchData() {
-    if(searchCity !== "") {
-       setShowError(true)
-    }
-  }
+  
   const [city, setCity] = useState<string | null> (null)
+  const [temp, setTemp] = useState<number>(11.57)
+  
 
+  const callData = async ()=> {
+    if(!searchCity.trim()) {return alert('Campo vazio')}
+     else {
+       const request = await fetch(`buscar a url do openWeather depois`)
+     }
+
+  }
+  
 
 
 
@@ -33,14 +39,15 @@ const SearchBox = () => {
         <button className={styles.mic_btn} onClick={() : void => setMicOn(!micOn)}>{micOn ? <CiMicrophoneOn size={30} /> : <CiMicrophoneOff size={30} />}</button>
       </div>
 
+
       <section>
         <div>
-          <h3>Tokyo</h3>
-          <div>13°C</div>
+          <h3>{city}</h3>
+          <div>{temp}°C</div>
         </div>
       </section>
 
-      <button className={styles.search_btn} onClick={handleSearchData}>Buscar</button>
+      <button onClick={callData} className={styles.search_btn}>Buscar</button>
 
       {showError ? <ErrorValue closeError={changeShowError} /> : ''}
 
