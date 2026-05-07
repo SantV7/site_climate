@@ -20,13 +20,13 @@ const SearchBox = () => {
        setShowError(true)
     }
   }
+  const [city, setCity] = useState<string | null> (null)
 
 
 
 
   return (
     <>
-
     <section className={styles.climate_area}>
       <div className={styles.search_tools}>
         <input onChange={(e) : void => setSearchCity(e.target.value)} type="text" placeholder={searchCity}/>

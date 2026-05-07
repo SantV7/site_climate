@@ -3,8 +3,7 @@ import { IoIosClose } from "react-icons/io";
 
 
 interface ErrorValueProps {
-    closeError: () => void
-
+  closeError: () => void
 }
 
 
