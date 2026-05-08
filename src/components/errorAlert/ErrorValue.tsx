@@ -17,7 +17,7 @@ const ErrorValue = ({closeError} : ErrorValueProps) => {
             <div></div>
             <IoIosClose className={styles.btn_close} onClick={closeError} style={{cursor: 'pointer'}} size={55}/>
         </header>
-        <h1>É necessário escrever uma cidade</h1>
+        <h1>Cidade inválida / Campo vazio</h1>
     
     </div>
     </>
